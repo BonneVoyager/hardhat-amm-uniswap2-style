@@ -1,0 +1,14 @@
+.DS_Store
+.env
+coverage
+coverage.json
+node_modules
+typechain-types
+
+#Hardhat files
+cache
+artifacts
+
+#Parcel
+.parcel-cache
+dist

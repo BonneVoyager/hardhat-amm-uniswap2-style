@@ -1,0 +1,22 @@
+{
+  "name": "hardhat-amm-uniswap2-style",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "2.0.0",
+    "@openzeppelin/contracts": "4.8.0",
+    "@typescript-eslint/eslint-plugin": "5.47.1",
+    "@typescript-eslint/parser": "5.47.1",
+    "dotenv": "16.0.3",
+    "eslint": "8.31.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "hardhat": "2.12.5",
+    "hardhat-contract-sizer": "2.6.1",
+    "nodemon": "2.0.20",
+    "solhint": "3.3.7"
+  },
+  "scripts": {
+    "cleanup": "rm -rf artifacts/ cache/ coverage/ typechain-types/",
+    "coverage": "npx hardhat coverage",
+    "lint": "./node_modules/.bin/eslint --ext .ts ./test && ./node_modules/.bin/solhint contracts/*.sol",
+    "test": "nodemon -x 'npx hardhat test' -w contracts -w test -e sol,ts"
+  }
+}
